@@ -8,4 +8,4 @@ catch(Exception $e) {
 
 $req = $bdd->query('SELECT id, firstname, lastname FROM user order by id');
 
-require 'indexView.php';
+require 'view.php';
