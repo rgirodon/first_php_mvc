@@ -40,6 +40,12 @@ class UsersManagerTest extends TestCase {
         $user = $this->usersManager->getUser(1);
         
         $this->assertEquals(1, $user->id);
+        
+        $this->assertEquals('Bobby', $user->firstname);
+        
+        $this->assertEquals('Firmino', $user->lastname);
+        
+        $this->assertEquals('LFC', $user->password);
     }
 }
 
