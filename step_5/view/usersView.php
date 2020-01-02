@@ -11,7 +11,7 @@ ob_start();
 <ul>        
 
 <?php
-while ($user = $req->fetch()) {
+foreach ($users as $user) {
 ?>
 
     <li>
@@ -20,8 +20,6 @@ while ($user = $req->fetch()) {
 
 <?php
 }
-
-$req->closeCursor();
 ?>
 
 </ul>

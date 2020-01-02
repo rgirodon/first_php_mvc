@@ -6,6 +6,11 @@
     </head>
         
     <body>
+    	
+    	<header>
+    		<h1><?= $title ?></h1>
+    	</header>
+    	
         <?= $content ?>
     </body>
 </html>

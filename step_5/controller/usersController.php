@@ -3,6 +3,6 @@ require '../model/UsersManager.php';
 
 $usersManager = new UsersManager();
 
-$req = $usersManager->getUsers();
+$users = $usersManager->getUsers();
 
 require '../view/usersView.php';

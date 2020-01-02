@@ -15,7 +15,7 @@ foreach ($users as $user) {
 ?>
 
     <li>
-        <a href="userController.php?id=<?php echo $user->id; ?>"><?php echo $user->firstname; ?> <?php echo $user->lastname; ?></a>
+        <?php echo $user->id; ?> - <?php echo $user->firstname; ?> <?php echo $user->lastname; ?>
     </li>
 
 <?php

@@ -12,7 +12,7 @@
         while ($user = $req->fetch()) {
         ?>
             <li>
-    	        <?php echo $user['id']; ?> - <?php echo $user['firstname']; ?> <?php echo $user['lastname']; ?>
+    	        <?= $user['id'] ?> - <?= $user['firstname'] ?> <?= $user['lastname'] ?>
             </li>
 
         <?php

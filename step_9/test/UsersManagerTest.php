@@ -32,7 +32,7 @@ class UsersManagerTest extends TestCase {
         
         $users = $this->usersManager->getUsers();
         
-        $this->assertEquals(3, count($users));
+        $this->assertEquals(4, count($users));
     }
     
     public function testGetUser() {

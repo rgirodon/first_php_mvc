@@ -1,12 +1,10 @@
 <?php 
+
 $title = 'Users'; 
-?>
 
-<?php 
 ob_start(); 
-?>
 
-<h1>Users</h1>
+?>
 
 <ul>        
 
@@ -15,7 +13,7 @@ while ($user = $req->fetch()) {
 ?>
 
     <li>
-        <?php echo $user['id']; ?> - <?php echo $user['firstname']; ?> <?php echo $user['lastname']; ?>
+        <?= $user['id'] ?> - <?= $user['firstname'] ?> <?= $user['lastname'] ?>
     </li>
 
 <?php
@@ -26,6 +24,10 @@ $req->closeCursor();
 
 </ul>
 
-<?php $content = ob_get_clean(); ?>
+<?php 
 
-<?php require('template.php'); ?>
+$content = ob_get_clean();
+
+require('template.php'); 
+
+?>

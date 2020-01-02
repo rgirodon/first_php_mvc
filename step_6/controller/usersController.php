@@ -5,6 +5,6 @@ use \FirstMvc\Model\UsersManager as UsersManager;
 
 $usersManager = new UsersManager();
 
-$req = $usersManager->getUsers();
+$users = $usersManager->getUsers();
 
 require '../view/usersView.php';
