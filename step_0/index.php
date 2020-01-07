@@ -18,7 +18,11 @@
 
         $req = $bdd->query('SELECT id, firstname, lastname FROM user order by id');
 
-        while ($user = $req->fetch()) {
+        $users = $req->fetchAll();
+
+        $req->closeCursor();
+
+        foreach ($users as $user) {
         ?>
             <li>
     	        <?php echo $user['id']; ?> - <?php echo $user['firstname']; ?> <?php echo $user['lastname']; ?>
@@ -26,8 +30,6 @@
 
         <?php
         }
-        
-        $req->closeCursor();
         ?>
         </ul>
     </body>

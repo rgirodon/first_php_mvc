@@ -3,13 +3,12 @@
 $title = 'Users'; 
 
 ob_start(); 
-
 ?>
 
 <ul>        
 
 <?php
-while ($user = $req->fetch()) {
+foreach ($users as $user) {
 ?>
 
     <li>
@@ -18,16 +17,12 @@ while ($user = $req->fetch()) {
 
 <?php
 }
-
-$req->closeCursor();
 ?>
 
 </ul>
 
 <?php 
-
 $content = ob_get_clean();
 
 require('template.php'); 
-
 ?>
