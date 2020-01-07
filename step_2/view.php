@@ -9,7 +9,7 @@
         <h1>Users</h1>
  		<ul>        
 		<?php
-        while ($user = $req->fetch()) {
+        foreach ($users as $user) {
         ?>
             <li>
     	        <?= $user['id'] ?> - <?= $user['firstname'] ?> <?= $user['lastname'] ?>
@@ -17,8 +17,6 @@
 
         <?php
         }
-        
-        $req->closeCursor();
         ?>
         </ul>
     </body>

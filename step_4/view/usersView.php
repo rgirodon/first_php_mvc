@@ -11,17 +11,15 @@ ob_start();
 <ul>        
 
 <?php
-while ($user = $req->fetch()) {
+foreach ($users as $user) {
 ?>
 
     <li>
-        <?php echo $user['id']; ?> - <?php echo $user['firstname']; ?> <?php echo $user['lastname']; ?>
+        <?= $user['id'] ?> - <?= $user['firstname'] ?> <?= $user['lastname'] ?>
     </li>
 
 <?php
 }
-
-$req->closeCursor();
 ?>
 
 </ul>

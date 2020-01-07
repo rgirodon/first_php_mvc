@@ -1,6 +1,6 @@
 <?php
 require '../model/usersModel.php';
 
-$req = getUsers();
+$users = getUsers();
 
 require '../view/usersView.php';

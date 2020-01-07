@@ -10,5 +10,11 @@ function getUsers() {
         die('Erreur : '.$e->getMessage());
     }
     
-    return $bdd->query('SELECT id, firstname, lastname FROM user order by id');
+    $req = $bdd->query('SELECT id, firstname, lastname FROM user order by id');
+
+    $users = $req->fetchAll();
+
+    $req->closeCursor();
+
+    return $users;
 }
