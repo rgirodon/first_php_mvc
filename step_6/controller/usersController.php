@@ -1,4 +1,5 @@
 <?php
+require '../model/Manager.php';
 require '../model/UsersManager.php';
 
 use \FirstMvc\Model\UsersManager as UsersManager;
