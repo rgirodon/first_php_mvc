@@ -9,4 +9,4 @@ $usersManager = new UsersManager();
 
 $users = $usersManager->getUsers();
 
-require '../view/usersView.php';
+var_dump($users);
