@@ -1,7 +1,5 @@
 <?php
-require '../model/Manager.php';
-require '../domain/User.php';
-require '../model/UsersManager.php';
+require '../inc/autoload.php';
 
 use \FirstMvc\Model\UsersManager as UsersManager;
 

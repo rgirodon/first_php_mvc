@@ -1,6 +1,5 @@
 <?php
-require '../model/Manager.php';
-require '../model/ProductsManager.php';
+require '../inc/autoload.php';
 
 use \FirstMvc\Model\ProductsManager as ProductsManager;
 

@@ -1,5 +1,5 @@
 <?php
-require '../domain/User.php';
+require '../inc/autoload.php';
 
 use FirstMvc\Domain\User;
 
