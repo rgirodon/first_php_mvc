@@ -1,5 +1,6 @@
 <?php
 require '../inc/autoload.php';
+require '../inc/constants.php';
 
 use \FirstMvc\Model\ProductsManager as ProductsManager;
 

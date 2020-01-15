@@ -17,6 +17,9 @@ ob_start();
 <div>
     lastname : <?php echo $user->lastname; ?>
 </div>
+<div>
+    password : <?php echo $user->password; ?>
+</div>
 
 <?php $content = ob_get_clean(); ?>
 
