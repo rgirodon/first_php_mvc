@@ -7,6 +7,12 @@ use \FirstMvc\Domain\User as User;
 
 $usersManager = new UsersManager();
 
+$errors = [];
+
+$firstname = '';
+$lastname = '';
+$password = '';
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // get data of post

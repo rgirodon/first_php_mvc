@@ -19,7 +19,8 @@ foreach ($users as $user) {
 ?>
 
     <li>
-    <?= $user->id ?> - <?= $user->firstname ?> <?= $user->lastname ?>
+        <?= $user->id ?> - <?= $user->firstname ?> <?= $user->lastname ?> 
+        <a href="deleteUserController.php?id=<?= $user->id ?>">[Delete]</a>
     </li>
 
 <?php
