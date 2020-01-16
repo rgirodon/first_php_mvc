@@ -8,6 +8,10 @@ ob_start();
 
 <h1>Users</h1>
 
+<div>
+    <a href="addUserController.php">Create User</a>
+</div>
+
 <ul>        
 
 <?php
